@@ -1,44 +1,18 @@
 /* App.css or any other main CSS file */
-@import url('https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css');
+.App {
+  display: flex;
+  height: 100vh;
+}
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .App {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .map-container {
-    width: 50%;
-    height: 100%;
-    position: relative; /* For proper positioning of controls */
-  }
-  
-  .selected-area-container {
-    width: 50%;
-    height: 100%;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  
-  .leaflet-container {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .leaflet-draw-toolbar {
-    position: absolute; /* Ensure control is visible */
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    z-index: 1000; /* Ensure above other elements */
-  }
-  
-  .leaflet-draw-tooltip {
-    z-index: 1001; /* Higher than toolbar if needed */
-  }
-  
+.map-container {
+  width: 50%;
+  height: 100%;
+  position: relative; /* For proper positioning of controls */
+}
+
+.selected-area-container {
+  width: 50%;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
